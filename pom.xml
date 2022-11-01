@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.nandosan.tekno</groupId>
-	<artifactId>nandosan-test-2</artifactId>
+	<artifactId>demo-fery</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>learn-aws-pipeline</name>
 	<description>Demo project for Spring Boot</description>

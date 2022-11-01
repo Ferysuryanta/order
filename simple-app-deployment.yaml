@@ -9,21 +9,21 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deployment-hello-be
+  name: deployment-fery
   namespace: cdc-bootcamp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: app-hello-be
+      app: app-fery
   template:
     metadata:
       labels:
-        app: app-hello-be
+        app: app-fery
     spec:
       containers:
-        - name: container-hello-be
-          image: 872583825157.dkr.ecr.ap-southeast-1.amazonaws.com/demo-be
+        - name: container-fery
+          image: 872583825157.dkr.ecr.ap-southeast-1.amazonaws.com/demo-fery
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -31,11 +31,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: service-hello-be
+  name: service-fery
   namespace: cdc-bootcamp
 spec:
   selector:
-    app: app-hello-be
+    app: app-fery
   ports:
     - port: 8080
       targetPort: 8080
